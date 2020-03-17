@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite|Viaoda+Libre&display=swap" rel="stylesheet">
+    <title>Musical Automat</title>
+</head>
+<body onload="buildPage()">
+    <h1>Annasthesia's Marvelous Musical Automat</h1>
+    <textarea id="link-display"></textarea>
+<!-- Display Control Buttons-->
+<button onclick="hideAllBoxes()">Hide All</button>
+<button onclick="showAllBoxes()">Show All</button>
+<!--<button onclick="clearLocalStorage()">Clear Storage</button>-->
+<button onclick="addTestTracks()">Add Test Tracks</button>
+<button id="lockDeletionBtn" onclick="toggleDeleteBtn()">Unlock Delete Buttons</button>
+
+<!-- Song Entry Form-->
+<div class="entry-form">
+    <h3 onclick="hideBox('entry-form-subcontainer')">Add a new Track</h3>
+    <div id="entry-form-subcontainer">
+        <div class="form-name-pair">
+            <p>Track Name:</p>
+            <textarea id="name-form"></textarea>
+        </div>
+        <div class="form-name-pair">
+            <p>Youtube Link:</p>
+            <textarea id="link-form"></textarea>
+        </div>
+        <div class="form-name-pair">
+            <p>Category:</p>
+            <textarea id="genre-form"></textarea></br>
+            <p onclick="hideBox('genre-menu')">Select Preexisting Genre</p>
+            <div id="genre-menu">
+               <!-- <div class="genre-card">New Genre</div> -->
+            </div>
+        </div>
+        </br>
+        <button onclick="newTrackEntry()">Add</button>
+    </div>
+</div>
+</body>
+</html>

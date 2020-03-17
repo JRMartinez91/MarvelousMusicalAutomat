@@ -1,0 +1,153 @@
+*{
+    border: 1px solid hotpink;
+}
+/*Webfont*/
+@font-face {
+    font-family: 'flottflottregular';
+    src: url('webfont/flottflott-webfont.woff2') format('woff2'),
+         url('webfont/flottflott-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Special+Elite|Viaoda+Libre&display=swap');
+
+/* New Track Entry Form */
+.entry-form{
+    background-color:rgb(171, 193, 233);
+    margin: 10px;
+    padding: 10px;
+}
+
+.entry-form h3{
+    margin: 0;
+}
+
+.entry-form p{
+    display:inline;
+}
+
+.entry-form textarea{
+    vertical-align: middle;
+}
+
+.form-name-pair{
+    display:inline-block;
+    width: 400px;
+    margin: 10px 10px;
+    padding: 10px;
+}
+
+#genre-menu{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:3px;
+    justify-content: flex-start;
+    background-color: darkslategray;
+}
+
+.genre-card{
+    padding: 5px;
+    color: white;
+    background-color: darkcyan;
+    display: inline-block;
+    margin: 3px;
+    border: 2px solid transparent;
+}
+
+.selected-genre-card{
+    color: black;
+    background: yellow;
+}
+
+
+/* Track Selection Menu*/
+.title-card{
+    background-color: lightgrey;
+    width: 25%;
+    height: 100px;
+    margin: 0 2% 0 2%;
+    margin-bottom: 10px;
+    border: 15px solid transparent; 
+    border-image: url(Images/chrome-border-2.png) 33% stretch; 
+    border-radius: 15px;
+}
+
+.tc-sub-box{
+    float: left;
+    width: 70%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    height:inherit;
+}
+
+.delete-alert{
+    background-color: red;
+    color:white;
+    font-weight:bold;
+}
+
+.deleteButton {
+    float: none;
+    border-radius: 0;
+    height:20px;
+    color:white;
+    background-color:red;
+    font-weight:bold;
+}
+
+.song-title{
+    color:darkblue;
+    font-size:20px;
+    margin: 0;
+    font-family:'Special Elite',cursive;
+    font-weight: 600;
+    letter-spacing:0.1em;
+    text-align:center;
+}
+
+.selectButton{
+    border-radius: 30px;
+    float: right;
+    height: 60px;
+    width: 60px;
+    margin: 20px 20px 20px 0;
+}
+
+.genre-box{
+    margin: 5px;
+    padding: 10px;
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image:url(images/chrome-border-2.png) 33% stretch;
+
+}
+
+.inner-box{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 10px;
+    background-color: #9999a9;
+
+}
+
+.genre-title{
+    color: darkred;
+    font-size: 50px;
+    margin: 10px;
+    font-family: 'flottflottregular';
+    text-shadow: 0 -1px white, 0 1px black, 0 -3px 2px gray, -3px 0 2px gray, 0 3px 2px white, 3px 0 2px white;  
+    display: block;
+    width: fit-content;
+    padding: 10px 30px;
+    background-color: darkgray;
+    margin: 0 auto;
+    border-radius: 20px;
+}
